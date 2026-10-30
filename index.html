@@ -1,12 +1,210 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My DevOps Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f3ff;
+            color: #25213a;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+        }
+
+        nav h2 {
+            color: #7045d6;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #25213a;
+            margin-left: 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: #e9e1ff;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .hero span {
+            color: #7045d6;
+        }
+
+        .hero p {
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #7045d6;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        section {
+            padding: 55px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            border: 1px solid #ddd3ff;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+        }
+
+        .project h3 {
+            color: #7045d6;
+            margin-bottom: 10px;
+        }
+
+        #contact {
+            text-align: center;
+            background: #e9e1ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #25213a;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>My First Automated Deployment!</h1>
-    <p>This is my first CI/CD project...</p>
+    <nav>
+        <h2>MyPortfolio</h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Hello, I'm a <span>Developer!</span></h1>
+        <p>Learning Software Development, Cloud Computing and DevOps.</p>
+        <a href="#projects" class="button">Explore My Work</a>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a computer science student passionate about
+            building applications, understanding technology
+            and learning how software reaches real users.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Git</div>
+            <div class="skill">GitHub</div>
+            <div class="skill">AWS (Learning)</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal website built using HTML and CSS.</p>
+            </div>
+
+            <div class="project">
+                <h3>Blind-Spot Detection</h3>
+                <p>A computer vision project for detecting road users.</p>
+            </div>
+
+            <div class="project">
+                <h3>ForestRescue</h3>
+                <p>An IoT-based emergency communication project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Interested in collaborating? Let's connect!</p>
+    </section>
+
+    <footer>
+        <p>My Developer Journey | Built with HTML and CSS</p>
+    </footer>
 
 </body>
 </html>
